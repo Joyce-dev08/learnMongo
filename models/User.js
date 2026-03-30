@@ -13,7 +13,11 @@ const userSchema = new Schema({
     phone: {
         type: Number,
         unique: true
-    }
+    },
+    password: {
+        type: String,
+        undefined: true
+    }   
 })
 
 module.exports = model('User', userSchema)

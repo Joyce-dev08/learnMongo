@@ -14,6 +14,8 @@ const connectDB = require('./db.js');
  //routes
  app.use('/api/users', require('./routes/users.js'));
  app.use('/api/posts', require('./routes/posts.js'));
+ app.use('/api/comments', require('./routes/comments.js'));
+ app.use('/api/auth', require('./routes/auth.js'));
 
 
  app.listen(3000, () => {
