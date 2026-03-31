@@ -13,6 +13,9 @@ const decoded = jsonweb.verify(token, process.env.JWT_SECRET);
 
 // attach user id
 req.user = decoded
+
+next();
+
 }
 
 module.exports = protect;
